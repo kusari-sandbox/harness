@@ -69,7 +69,11 @@ export default function ArTestWrapper(props: PropsWithChildren<TestWrapperProps>
     parent = Parent.Enterprise
   } = props
   const search = QueryString.stringify(queryParams, { addQueryPrefix: true })
-  const routePath = compile(path)(pathParams) + search
+  // path-to-regexp@8 requires compiled param values to be string | string[] (no numbers)
+  const normalizedPathParams = pathParams
+    ? Object.fromEntries(Object.entries(pathParams).map(([key, value]) => [key, String(value)]))
+    : pathParams
+  const routePath = compile(path)(normalizedPathParams) + search
   const history = useMemo(() => createMemoryHistory({ initialEntries: [routePath] }), [])
 
   return (

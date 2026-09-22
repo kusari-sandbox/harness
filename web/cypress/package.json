@@ -22,5 +22,18 @@
     "@types/node": "^20.14.10",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2"
+  },
+  "resolutions": {
+    "@babel/runtime": "^7.26.10",
+    "minimatch": "3.1.4",
+    "brace-expansion": "1.1.18",
+    "picomatch": "2.3.2",
+    "cross-spawn": "7.0.6",
+    "lodash": "4.17.21",
+    "express/path-to-regexp": "0.1.13",
+    "qs": "6.16.0",
+    "send": "1.2.1",
+    "form-data": "4.0.6",
+    "follow-redirects": "1.16.0"
   }
 }
