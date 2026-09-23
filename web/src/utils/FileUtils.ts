@@ -23,7 +23,7 @@ import type { GitInfoProps } from './GitUtils'
 
 // TODO: Configure this to use a local worker/webpack loader
 // Maybe use pdfjs directly: https://github.com/mozilla/pdf.js/blob/master/examples/webpack/webpack.config.js
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
 
 type UseFileViewerDecisionProps = Pick<GitInfoProps, 'repoMetadata' | 'gitRef' | 'resourcePath' | 'resourceContent'>
 
