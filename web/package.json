@@ -171,7 +171,7 @@
     "ts-jest": "^29.1.0",
     "ts-loader": "^9.2.6",
     "tsconfig-paths-webpack-plugin": "^3.5.1",
-    "typed-scss-modules": "^7.1.4",
+    "typed-scss-modules": "^8.1.1",
     "typescript": "^4.7.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.58.0",
@@ -181,7 +181,9 @@
     "yaml-loader": "^0.6.0"
   },
   "resolutions": {
-    "canvas": "link:./node_modules/.cache/null"
+    "canvas": "link:./node_modules/.cache/null",
+    "jsonpointer": "^5.0.1",
+    "typed-scss-modules/postcss": ">=8.4.27 <8.5.30"
   },
   "engines": {
     "node": ">=14.16.0"
